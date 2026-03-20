@@ -1,0 +1,1 @@
+# 2026javascript_school
