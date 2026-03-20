@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3주차 실습</title>
+  </head>
+  <body>
+    <h3>목록(리스트) 만들기</h3>
+    <hr />
+    <ol type="A">
+      <li>물을 끓인다.</li>
+      <li>라면과 스프를 넣는다.</li>
+      <li>파를 썰어 넣는다.</li>
+      <li>5분 후 먹는다.</li>
+      <ul>
+        <li>계란 추가</li>
+        <li>어묵 추가</li>
+        <li>떡 추가</li>
+      </ul>
+    </ol>
+    <hr />
+    <dl>
+      <dt><strong>에지</strong></dt>
+      <dd>마이크로소프트사</dd>
+      <dd>가장 많이 사용</dd>
+
+      <dt><strong>파이어폭스</strong></dt>
+      <dd>모질라 재단</dd>
+
+      <dt><strong>크롬</strong></dt>
+      <dd>구글</dd>
+      <dd>디버깅에 많이 사용</dd>
+    </dl>
+    <hr />
+    <h3>테이블 작성</h3>
+    <table border="1">
+      <caption>
+        성적
+      </caption>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>HTML</th>
+          <th>CSS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>황기태</td>
+          <td rowspan="2">80</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>이재문</td>
+          <td>99</td>
+        </tr>
+        <tr>
+          <td>이병은</td>
+          <td>40</td>
+          <td>61</td>
+        </tr>
+        <tr>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+          <td><img src="media/apple.png" alt="사과 이미지" /></td>
+          <td><img src="media/banana.png" alt="바나나 이미지" /></td>
+          <td><img src="media/mango.png" alt="망고 이미지" /></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>합</th>
+          <th>225</th>
+          <th>230</th>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <h3>하이퍼링크 실습</h3>
+    <a href="text.html" target="new">text.html로 이동</a><br />
+    <a href="http://www.naver.com" target="new"
+      ><img src="media/apple.png" alt="네이버로 이동" /></a
+    ><br />
+    <a href="media/chapter9.pdf" download>강의자료 다운로드</a>
+    <hr />
+    <video
+      src="media/bear.mp4"
+      width="300"
+      height="300"
+      controls
+      autoplay
+      muted
+    ></video>
+    <audio src="media/EmbraceableYou.mp3" controls loop></audio>
+    <br />
+    <hr />
+    <object width="90%" height="600" data="media/chapter9.pdf"></object>
+  </body>
+</html>
