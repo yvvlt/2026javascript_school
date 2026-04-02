@@ -8,6 +8,38 @@
   <form>
     <label for="color_select">색 선택: </label>
     <input type="color" value="#00BFFF" id="color_select" />
+    <pre>
+        month: <input type="month"><br>
+        week: <input type="week"><br>
+        data: <input type="date"><br>
+        time: <input type="time"><br>
+        local: <input type="datetime-local"><br>
+    </pre>
+    <hr />
+    지속시간 (0.0~10.0시간) :
+    <input type="number" min="0.0" max="10.0" step="0.5" /><br /><br />
+    온도 설정 : 10&deg;<input
+      type="range"
+      min="10"
+      max="30"
+      list="temp"
+    />30&deg;
+    <datalist id="temp">
+      <option value="12"></option>
+      <option value="20"></option>
+      <option value="28"></option>
+    </datalist>
+    <hr />
+    <h3>회원 정보를 입력해주세요.</h3>
+    <hr />
+    <form>
+      email: <input type="email" placeholder="id@host" required /><br />
+      홈페이지: <input type="url" placeholder="http://" /><br />
+      전화번호: <input type="tel" placeholder="010-1234-5678" />
+      <hr />
+      검색어: <input type="search" placeholder="검색어" />
+      <input type="button" value="검색" />
+    </form>
   </form>
   <body></body>
 </html>
