@@ -36,14 +36,15 @@
           <input type="number" name="age" min="20" max="30" step="1" required />
           세
         </label>
-
-        <label
-          >생년월일
+        <br /><br />
+        <label>
+          <h3>생년월일</h3>
           <input type="date" name="birthdate" required />
         </label>
-
-        <label
-          >교육 만족도
+        <br /><br />
+        <label>
+          <h3>교육 만족도</h3>
+          매우불만족
           <input
             type="range"
             name="satisfaction"
@@ -52,34 +53,31 @@
             value="3"
             step="1"
           />
+          매우 만족
         </label>
-        <div class="satisfaction-labels">
-          <span>매우 불만족</span>
-          <span>매우 만족</span>
-        </div>
       </section>
 
       <section>
         <h2>추가 정보</h2>
         <label>
-          *연락처
+          *연락처<br />
           <input
             type="tel"
             name="phone"
             placeholder="010-1234-5678"
             pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
             required
-          />
+          /><br /><br />
         </label>
 
         <label>
-          *이메일
+          *이메일<br />
           <input
             type="email"
             name="email"
             placeholder="example@email.com"
             required
-          />
+          /><br /><br />
         </label>
 
         <label
@@ -88,12 +86,12 @@
             <option value="none" selected>없음</option>
             <option value="under-1">1년 미만</option>
             <option value="1-3">1~3년</option>
-            <option value="over-3">3년 이상</option>
-          </select>
+            <option value="over-3">3년 이상</option></select
+          ><br /><br />
         </label>
 
         <label
-          >사용 언어
+          >사용 언어<br />
           <label class="inline-label"
             ><input type="checkbox" name="lang" value="Python" /> Python</label
           >
@@ -109,11 +107,11 @@
           >
           <label class="inline-label"
             ><input type="checkbox" name="lang" value="Kotlin" /> Kotlin</label
-          >
+          ><br /><br />
         </label>
 
         <label
-          >남기고 싶은 말
+          >남기고 싶은 말<br />
           <textarea
             name="comments"
             rows="5"
@@ -128,7 +126,8 @@
         <button type="reset" class="reset" alt="초기화">RESET</button>
       </div>
     </form>
+    <br />
 
-    <footer>Copyright 2026 by Kangnam</footer>
+    <footer>Copyright 2026 by 김예원</footer>
   </body>
 </html>
