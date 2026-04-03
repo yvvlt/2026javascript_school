@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>설문지</title>
+    <link rel="stylesheet" href="survey.css" />
+  </head>
+  <body>
+    <header>
+      <h1>설문지</h1>
+      <p>
+        소프트웨어 기술 교육에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.
+      </p>
+      <hr />
+    </header>
+
+    <form>
+      <section>
+        <h2>기본 정보</h2>
+        <label>
+          <h3>학년</h3>
+          <input type="radio" name="grade" value="1" checked /> 1학년
+          <input type="radio" name="grade" value="2" /> 2학년
+          <input type="radio" name="grade" value="3" /> 3학년
+          <input type="radio" name="grade" value="4" /> 4학년
+        </label>
+        <br /><br />
+        <label>
+          <h3>성별</h3>
+          <input type="radio" name="gender" value="male" checked /> 남
+          <input type="radio" name="gender" value="female" /> 여
+        </label>
+        <br /><br />
+        <label>
+          <h3>나이(20 ~ 30)</h3>
+          <input type="number" name="age" min="20" max="30" step="1" required />
+          세
+        </label>
+
+        <label
+          >생년월일
+          <input type="date" name="birthdate" required />
+        </label>
+
+        <label
+          >교육 만족도
+          <input
+            type="range"
+            name="satisfaction"
+            min="1"
+            max="5"
+            value="3"
+            step="1"
+          />
+        </label>
+        <div class="satisfaction-labels">
+          <span>매우 불만족</span>
+          <span>매우 만족</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>추가 정보</h2>
+        <label>
+          *연락처
+          <input
+            type="tel"
+            name="phone"
+            placeholder="010-1234-5678"
+            pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+            required
+          />
+        </label>
+
+        <label>
+          *이메일
+          <input
+            type="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+          />
+        </label>
+
+        <label
+          >프로그래밍 경험
+          <select name="experience">
+            <option value="none" selected>없음</option>
+            <option value="under-1">1년 미만</option>
+            <option value="1-3">1~3년</option>
+            <option value="over-3">3년 이상</option>
+          </select>
+        </label>
+
+        <label
+          >사용 언어
+          <label class="inline-label"
+            ><input type="checkbox" name="lang" value="Python" /> Python</label
+          >
+          <label class="inline-label"
+            ><input type="checkbox" name="lang" value="Java" /> Java</label
+          >
+          <label class="inline-label"
+            ><input type="checkbox" name="lang" value="C++" /> C++</label
+          >
+          <label class="inline-label"
+            ><input type="checkbox" name="lang" value="JavaScript" />
+            JavaScript</label
+          >
+          <label class="inline-label"
+            ><input type="checkbox" name="lang" value="Kotlin" /> Kotlin</label
+          >
+        </label>
+
+        <label
+          >남기고 싶은 말
+          <textarea
+            name="comments"
+            rows="5"
+            cols="50"
+            placeholder="의견을 자유롭게 남겨주세요"
+          ></textarea>
+        </label>
+      </section>
+
+      <div class="buttons">
+        <button type="submit" class="submit" alt="제출하기">SUBMIT</button>
+        <button type="reset" class="reset" alt="초기화">RESET</button>
+      </div>
+    </form>
+
+    <footer>Copyright 2026 by Kangnam</footer>
+  </body>
+</html>
