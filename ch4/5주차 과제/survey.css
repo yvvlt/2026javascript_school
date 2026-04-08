@@ -1,0 +1,80 @@
+body {
+  font-family: "맑은 고딕", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 2px solid #1e90ff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  background-color: #f0f8ff;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #1e90ff;
+  padding: 0 10px;
+}
+
+label,
+strong {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.inline-label {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 15px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button img {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 30px;
+}
