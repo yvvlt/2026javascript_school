@@ -179,8 +179,8 @@
           <input type="radio" name="gender" value="female" /> 여
         </div>
 
-        <label for="age">
-          나이(20 ~ 30)
+        <div>
+          <h3>나이(20 ~ 30)</h3>
           <input
             type="number"
             id="age"
@@ -191,15 +191,15 @@
             required
           />
           세
-        </label>
+        </div>
 
-        <label for="birthdate">
-          생년월일
+        <div>
+          <h3>생년월일</h3>
           <input type="date" id="birthdate" name="birthdate" required />
-        </label>
+        </div>
 
-        <label class="satisfaction-label" for="satisfaction">
-          교육 만족도
+        <div>
+          <h3>교육 만족도</h3>
           <span>매우 불만족</span>
           <input
             type="range"
@@ -214,14 +214,15 @@
             aria-valuenow="3"
           />
           <span>매우 만족</span>
-        </label>
+        </div>
       </fieldset>
+      <br />
 
-      <section>
-        <h2>추가 정보</h2>
+      <fieldset>
+        <legend>추가 정보</legend>
 
         <label for="phone">
-          *연락처
+          *연락처<br />
           <input
             type="tel"
             id="phone"
@@ -230,19 +231,19 @@
             pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
             required
             title="010-1234-5678 형태로 입력하세요"
-          />
-        </label>
+          /> </label
+        ><br /><br />
 
         <label for="email">
-          *이메일
+          *이메일<br />
           <input
             type="email"
             id="email"
             name="email"
             placeholder="example@email.com"
             required
-          />
-        </label>
+          /> </label
+        ><br /><br />
 
         <label for="experience">
           프로그래밍 경험
@@ -253,9 +254,10 @@
             <option value="over-3">3년 이상</option>
           </select>
         </label>
+        <br /><br />
 
-        <fieldset>
-          <legend>사용 언어</legend>
+        <div>
+          사용 언어<br />
           <label class="inline-label"
             ><input type="checkbox" name="lang" value="Python" /> Python</label
           >
@@ -272,10 +274,11 @@
           <label class="inline-label"
             ><input type="checkbox" name="lang" value="Kotlin" /> Kotlin</label
           >
-        </fieldset>
+        </div>
+        <br />
 
         <label for="comments">
-          남기고 싶은 말
+          남기고 싶은 말<br />
           <textarea
             id="comments"
             name="comments"
@@ -284,7 +287,7 @@
             placeholder="의견을 자유롭게 남겨주세요"
           ></textarea>
         </label>
-      </section>
+      </fieldset>
 
       <div class="buttons">
         <button type="submit" title="제출하기">
