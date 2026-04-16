@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>자바스크립트 위치 확인하기</title>
+    <link rel="stylesheet" href="style_js.css" />
+    <script>
+        document.write("내부 자바스크립트로 작성한 것<hr>");
+    </script>
+
+    /* 외부 자바스크립트 파일, script01.js */
+    <script src="script01.js"></script>
+</head>
+
+<body>
+    <a href="#" onclick="document.write('onclick 태그의 자바스크립트')" target="new">눌러보세요!</a>
+    <hr>
+    <a href="javascript:alert('href 태그의 자바스크립트')">안 누르실 거예요?</a>
+</body>
+
+</html>
